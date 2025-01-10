@@ -1,8 +1,21 @@
+/* GENERAL */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
 
 /* HEADER */
 
@@ -20,3 +33,21 @@ main {
     padding: 80px;
 }
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+col {
+    width: calc(100% / 3 - 10px);
+}
+
+.row {
+    gap: 10px;
+    display: flex;
+}
+
+.inner {
+    padding: 20px;
+    background-color: white;
+}
