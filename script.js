@@ -30,5 +30,6 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
 
 //seconda parte
-/* Milestone 1
-Facciamo in modo di creare un overlay che copra l’intera pagina e all’interno, centrata, disponiamo un’immagine qualunque ed un button di chiusura. */
+/*Milestone 3
+Inseriamo il pezzo di logica finale: quando una foto viene cliccata, dobbiamo fare in modo che sia proprio quella foto a essere mostrata all’interno dell’overlay.
+Ci sono diversi modi di farlo, prova a sperimentare*/
