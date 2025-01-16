@@ -16,6 +16,14 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
         console.log("response.data", response.data)
         response.data.forEach((element,index) => {
             const nameTitle = element.title;
-            const card = document.getElementById("card");
+            const card = document.getElementById(`card-${index+1}`);
+            if(card) {
+                const cardTitle = card.querySelector('.card-title').textContent = nameTitle
+            }
         })
       })
+
+//gestione errori
+.catch(error => {
+    console.error("errore chiamata", error)
+})
