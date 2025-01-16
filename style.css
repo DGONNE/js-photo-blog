@@ -44,7 +44,12 @@ main {
     gap: 10px;
 }
 
-.inner {
+.card {
     padding: 20px;
     background-color: white;
+    
 }
+ .card-text {
+    padding: 15px;
+ }
+
