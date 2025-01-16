@@ -27,3 +27,8 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 .catch(error => {
     console.error("errore chiamata", error)
 })
+
+
+//seconda parte
+/* Milestone 1
+Facciamo in modo di creare un overlay che copra l’intera pagina e all’interno, centrata, disponiamo un’immagine qualunque ed un button di chiusura. */
