@@ -33,3 +33,21 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 /*Milestone 3
 Inseriamo il pezzo di logica finale: quando una foto viene cliccata, dobbiamo fare in modo che sia proprio quella foto a essere mostrata all’interno dell’overlay.
 Ci sono diversi modi di farlo, prova a sperimentare*/
+
+const overlayElm = document.getElementById('overlay');
+const closeButtonElm = document.getElementById('close-overlay');
+const photosElm = document.querySelectorAll('.card-img');
+
+photosElm.forEach(photo => {
+    photo.addEventListener('click', () => {
+        overlayElm.style.display = 'flex';
+        const imageSrcelm = photo.src; 
+        const overlayImage = document.querySelectorAll('overlay-image');
+        overlayImage.src = imageSrcelm;
+    });
+});
+
+closeButton.addEventListener('click', () => {
+    overlayElm.style.display = 'none';
+}); 
+
